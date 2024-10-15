@@ -1,0 +1,121 @@
+#foo{
+    width : 1400px;
+    height : 120px;
+    padding : 20px;
+    margin : 50px;
+    text-align : center;
+    font-size : 88px;
+    font-family : 'Product Sans';
+  }
+#adw-components{
+    display: flex;
+    flex-direction: row;
+  }
+
+#search{
+    width : 1500px;
+    text-align : center;
+    height : 100px;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column; /* Stack the input field and buttons vertically */
+    align-items: center; /* Center the form elements */
+    margin-top: 50px;
+  }
+  .search-bar {
+    width: 100%;
+    max-width: 600px; /* Limit the width of the search bar */
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+  }
+
+  .button-container {
+    display: flex;
+    gap: 10px; /* Add space between buttons */
+    margin-top: 10px; /* Space above the buttons */
+  }
+  #row{
+    flex-direction: column;
+    padding : 30px;
+  }
+
+  .search-button, .lucky-button {
+    padding: 10px 20px;
+    background-color: #4285F4; /* Google blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .search-button:hover, .lucky-button:hover {
+    background-color: #357ae8; /* Darker blue on hover */
+  }
+#images{
+  font-size : 24px;
+}
+
+.search-container-adw {
+  text-align: left;
+  width: 800px;
+  padding : 50px;
+}
+
+input[type="text"], select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #357AE8;
+}
+label{
+  width : 400px;
+}
+#google-adw{
+  height : 40px;
+  padding : 10px;
+}
+#adw-search{
+  font-family : 'Arial';
+  font-size : 25px;
+  text-align : left;
+  padding : 30px;
+  color : red;
+}
+  .bgm {
+    background-image: url('BG.jpg'); /* Path to your image */
+    background-size: cover; /* Scales the image to cover the entire page */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+}
+.adw-search-button
+{
+    padding: 10px 20px;
+    background-color: #4285F4; /* Google blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#nav-bar{
+  color : #A52A2A;
+}
+.adw-search-page{
+  color : white;
+}

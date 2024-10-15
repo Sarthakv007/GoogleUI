@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+
+        <!-- http://getbootstrap.com/docs/5.3/ -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <link href="styles.css" rel="stylesheet">
+
+
+    </head>
+    <body>
+      <nav class="bg-light border navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav ms-auto mt-2">
+                <li class="nav-item"><a class="nav-link" href="/index.html">Google Search</a></li>
+                <li class="nav-item"><a class="nav-link" href="/image_search.html">Image Search</a></li>
+                <li class="nav-item"><a class="nav-link" href="/adw_search.html">Advance Search</a></li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+      <div id="google-adw">
+        <img src="google-text4.png" alt="google">
+      </div>
+      <div id="adw-search">
+        Advance Search
+      </div>
+      <div class="search-container-adw">
+        <form action="https://www.google.com/search" method="GET">
+            <!-- All these words -->
+            <div id="adw-components">
+                <label for="all">All these words:</label><input type="text" name="as_q" id="all" placeholder="Enter keywords...">
+            </div>
+
+            <!-- Exact phrase -->
+            <div id="adw-components">
+                <label for="exact">Exact phrase:</label>
+                <input type="text" name="as_epq" id="exact" placeholder="Enter exact phrase...">
+            </div>
+
+            <!-- Any of these words -->
+            <div id="adw-components">
+                <label for="any">Any of these words:</label>
+                <input type="text" name="as_oq" id="any" placeholder="Enter any keywords...">
+            </div>
+
+            <!-- None of these words -->
+            <div id="adw-components">
+            <label for="none">None of these words:</label>
+            <input type="text" name="as_eq" id="none" placeholder="Exclude these words...">
+            </div>
+
+            <!-- Numbers range -->
+            <div id="adw-components">
+            <label for="range">Numbers range:</label>
+            <input type="text" name="as_nlo" id="range" placeholder="From..."> -
+            <input type="text" name="as_nhi" placeholder="To...">
+            </div>
+
+            <!-- Language filter -->
+            <div id="adw-components">
+            <label for="lang">Language:</label>
+            <select name="lr" id="lang">
+                <option value="">Any language</option>
+                <option value="lang_en">English</option>
+                <option value="lang_es">Spanish</option>
+                <option value="lang_fr">French</option>
+                <!-- Add more languages as needed -->
+            </select>
+            </div>
+
+            <!-- File type filter -->
+            <div id="adw-components">
+            <label for="filetype">File type:</label>
+            <select name="as_filetype" id="filetype">
+                <option value="">Any format</option>
+                <option value="pdf">PDF</option>
+                <option value="doc">Microsoft Word</option>
+                <option value="xls">Microsoft Excel</option>
+                <!-- Add more formats as needed -->
+            </select>
+            </div>
+
+            <!-- Submit button -->
+            <div id="search">
+                <input type="submit" value="Advanced Search" class="adw-search-button">
+            </div>
+        </form>
+    </div>
+    </body>
+</html>
